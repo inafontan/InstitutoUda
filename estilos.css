@@ -1,35 +1,37 @@
-html{
-    font-family: Arial, Helvetica, sans-serif; 
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header {
-    background-color: rgb(255, 255, 255);
+.logo {
+    position: relative;
+    z-index: 100;
+    justify-content: center;
 }
 
-.header nav ul{
+.header nav ul {
     background-color: rgba(146, 192, 248, 0.35); 
 }
 
-.header nav ul li{
+.header nav ul li {
     list-style-type: none; 
     display: inline-block;
     margin-left: 70px; 
     font-size: 18px;
-    text-decoration: none;
 }
 
-a:link, a:visited, a:active {
+a:link   {
     text-decoration: none;
-}
+     
+}  
 
 h1 {
+    font-family: Arial, Helvetica, sans-serif;
     color: black; 
     font-size: 33px; 
     text-decoration: underline;
-    position: static; 
     position: relative; 
     margin-top: -50px; 
-    text-align: right;
+    text-align: right; 
 }
 
 h2 {
@@ -39,67 +41,50 @@ h2 {
     background: linear-gradient(#bed3d8, #84b5d1);
 }
 
-h3 {
+h3, h4 {
     color: black;  
     font-size: large; 
 }
 
-h4 {
-    color: black;  
-    font-size: large;
-}
-
 h5 {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px; 
+    font-size: 20px; 
     background: rgb(108, 165, 231);
     box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
     text-decoration: underline;
 }
 
-/* #novedades{
-    background: rgba(146, 192, 248, 0.35); 
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur ( 20px );
-    -webkit-backdrop-filter: blur( 20px );
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: flex;
-    flex-flow: row wrap;
-} */
-
 .flex-container { 
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
     padding-bottom: 10px;
     justify-content:space-around;   
 }
 
 .a {
-    background: rgba( 255, 255, 255, 0.3 );
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
     box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: auto;
+    width: 500px;
+    height: 350px;
+    margin-top: 5px;
 }
 
 .b {
-    background: rgba( 255, 255, 255, 0.3 );
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
     box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: auto;
-    margin-top: 20px;
+    width: 500px;
+    height: 350px;
+    margin-top: 5px;
 }
 
 .a ul li {
     list-style-type: none; 
     line-height: 30px;
+    
 }
 
 .b ul li {
@@ -163,99 +148,124 @@ h5 {
           "two three four five six"
           "seven seven seven seven seven"
           "eight nine ten eleven twelve";
-    justify-content: center; 
-    align-content: space-evenly; 
-    justify-items: center; 
-    align-items:  stretch; 
+    padding-bottom: 10px;
 }
       
-.one {
+.one { 
+    font-size: 18px;
+    font-weight:bold ;
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     justify-self: center; 
     align-self: center;
-    grid-area: one; 
+    grid-area: one;   
 }
       
-  .two {
-    justify-self: center; 
-    align-self: stretch; 
+.two {
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: space-between;
     grid-area: two; 
 }
       
 .three { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: three; 
 }
       
 .four { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: four; 
 }
       
 .five { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: five; 
 }
       
 .six { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: six; 
 }
       
 .seven { 
+    font-size: 18px;
+    font-weight:bold ;
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     justify-self: center; 
     align-self: center;
     grid-area: seven; 
-}
+}    
       
 .eight { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: eight;
 }
       
 .nine { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: nine; 
 }
       
 .ten { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: ten; 
 }
       
 .eleven { 
-    justify-self: center; 
-    align-self: stretch; 
+    background: rgba(146, 192, 248, 0.35); 
+    border-radius: 5px;
     text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
     grid-area: eleven; 
 }
       
-.twelve { 
+/* .twelve { 
+    background: rgba(146, 192, 248, 0.35); 
     justify-self: center; 
     align-self: stretch; 
     text-align: center;
     grid-area: twelve; 
-}
+} */
+
 /* TERMINA GRID OFERTA EDUCATIVA */
 
 /* Aplican sólo a página contacto */
 /*EMPIEZA FORMULARIO*/
 
- 
 .principal {
     display: block;
     width: 510px;
@@ -264,9 +274,8 @@ h5 {
 }
 
 form {
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 200px;
+    /* margin-top: 100px; */
+    width: 400px;
 }
  
 input, textarea {
@@ -298,16 +307,21 @@ textarea {
 /*TERMINA FORMULARIO*/
 
 iframe {
-    float: right;
-    margin-top: -400px;
-    margin-right: 50px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    border-radius: 5px;
+} 
+
+.flex-container-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*FOOTER*/
 .footer{
-    position: relative ;
+    z-index: 100;
+    
+    bottom: 2%;
     width: 100%;
     height: auto;
     margin-top: 10px;
@@ -338,66 +352,65 @@ iframe {
 
 /* GENERAL A TODAS LAS PAGS */
 @media screen and (max-width: 480px) {
-    .header, h1, header nav ul li {
+    h1, header nav ul li {
         background: rgb(57, 171, 236);
+        background-size: contain;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .header, h1, nav ul li {
-        text-shadow: 2px 2px #253dc4;
+    h1, nav ul li {
+        text-shadow: 2px 1px #ffffff;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .header, h1, header nav ul li {
-        box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+    h1, header nav ul li {
+        box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
         backdrop-filter: blur( 20px );
         -webkit-backdrop-filter: blur( 20px );
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-radius: 20px;
     }
 }
+
 
 /* NUESTRA HISTORIA */
 @media screen and (max-width: 480px) {
     .fotofrente {
-        color: indigo;
-        
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
     .fotofrente {
-        width: 100%;
+        width: auto;
     }
 }
-
-
 
 @media screen and (max-width: 768px) {
     .lic1, .lic, h2, ul li {
-       color: rgb(46, 25, 230);
+         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 }
 
-
-
 /* OFERTA EDUCATIVA */
+
 @media screen and (max-width: 480px) {
     .one, .seven {
-        background-color: rgb(28, 14, 155);
+        background-color: rgb(205, 203, 228);
     }
 }
 
 @media screen and (max-width: 768px) {
     .one, .seven {
-        background-color: rgb(28, 14, 155);
+        background-color: rgb(205, 203, 228);
     }
 }
 
 @media screen and (max-width: 1024px) {
     .one, .seven {
-        background-color: rgb(28, 14, 155);
+        background-color: rgb(205, 203, 228);
     }
 }
 
@@ -456,6 +469,29 @@ iframe {
         backdrop-filter: blur( 20px );
         -webkit-backdrop-filter: blur( 20px );
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+/* PAGINA CONTACTO */
+
+@media screen and (max-width: 480px) {
+    .flex-container-contacto { 
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container-contacto { 
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container-contacto { 
+        flex-direction: column;
+        align-items: center;
     }
 }
 
