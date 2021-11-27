@@ -361,7 +361,7 @@ iframe {
 /* NUESTRA HISTORIA */
 @media screen and (max-width: 480px) {
     .fotofrente {
-        
+        color: indigo;
         
     }
 }
