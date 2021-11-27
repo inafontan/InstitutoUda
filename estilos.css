@@ -1,0 +1,468 @@
+html{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+}
+
+.header nav ul{
+    background-color: rgba(146, 192, 248, 0.35); 
+}
+
+.header nav ul li{
+    list-style-type: none; 
+    display: inline-block;
+    margin-left: 70px; 
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+h1 {
+    color: black; 
+    font-size: 33px; 
+    text-decoration: underline;
+    position: static; 
+    position: relative; 
+    margin-top: -50px; 
+    text-align: right;
+}
+
+h2 {
+    color: black; 
+    font-size: 20px; 
+    text-decoration: underline;
+    background: linear-gradient(#bed3d8, #84b5d1);
+}
+
+h3 {
+    color: black;  
+    font-size: large; 
+}
+
+h4 {
+    color: black;  
+    font-size: large;
+}
+
+h5 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    background: rgb(108, 165, 231);
+    box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+    text-decoration: underline;
+}
+
+/* #novedades{
+    background: rgba(146, 192, 248, 0.35); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur ( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-flow: row wrap;
+} */
+
+.flex-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    justify-content:space-around;   
+}
+
+.a {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: auto;
+}
+
+.b {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: auto;
+    margin-top: 20px;
+}
+
+.a ul li {
+    list-style-type: none; 
+    line-height: 30px;
+}
+
+.b ul li {
+    list-style-type: none; 
+    line-height: 30px;
+}
+
+/*APLICAN A NUESTRA HISTORIA*/
+.fotofrente {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: -312px;
+    margin-right: 0px;
+}
+
+.linea {
+    border-top: 3px solid black; 
+    height: 4px;
+    max-width: 720px;
+    padding: 0;
+    margin: 0;
+}
+
+.historia {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.capdistancia { 
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold;
+    text-align: justify; 
+}
+
+.nuestro {
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify; 
+}
+
+.lic1 {
+    font-weight: bold; 
+}
+
+.lic {
+    font-weight: bold; 
+}
+
+/* GRID OFERTA EDUCATIVA */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 0fr 1fr;
+    gap: 20px 5px;
+    grid-template-areas:
+          "one one one one one"
+          "two three four five six"
+          "seven seven seven seven seven"
+          "eight nine ten eleven twelve";
+    justify-content: center; 
+    align-content: space-evenly; 
+    justify-items: center; 
+    align-items:  stretch; 
+}
+      
+.one {
+    justify-self: center; 
+    align-self: center;
+    grid-area: one; 
+}
+      
+  .two {
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: two; 
+}
+      
+.three { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: three; 
+}
+      
+.four { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: four; 
+}
+      
+.five { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: five; 
+}
+      
+.six { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: six; 
+}
+      
+.seven { 
+    justify-self: center; 
+    align-self: center;
+    grid-area: seven; 
+}
+      
+.eight { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: eight;
+}
+      
+.nine { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: nine; 
+}
+      
+.ten { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: ten; 
+}
+      
+.eleven { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: eleven; 
+}
+      
+.twelve { 
+    justify-self: center; 
+    align-self: stretch; 
+    text-align: center;
+    grid-area: twelve; 
+}
+/* TERMINA GRID OFERTA EDUCATIVA */
+
+/* Aplican sólo a página contacto */
+/*EMPIEZA FORMULARIO*/
+
+ 
+.principal {
+    display: block;
+    width: 510px;
+    color: rgb(188, 221, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 200px;
+}
+ 
+input, textarea {
+    width: 350px;
+    height: 7px;
+    background: rgba(146, 192, 248, 0.35);
+    border: 2px solid #f6f6f6;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:130px;
+}
+ 
+#submit {
+    display: block;
+    width: 372px;
+    height: 30px;
+    border: none;
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+/*TERMINA FORMULARIO*/
+
+iframe {
+    float: right;
+    margin-top: -400px;
+    margin-right: 50px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/*FOOTER*/
+.footer{
+    position: relative ;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0 12px 5px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.flex-container-footer{
+    background-color: rgba(146, 192, 248, 0.35); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.c{
+    text-align: center;
+    line-height: 0px;
+}
+
+.d{
+    text-align: center;
+    line-height: 0px;
+}
+
+/* MEDIAQUERIES */
+
+/* GENERAL A TODAS LAS PAGS */
+@media screen and (max-width: 480px) {
+    .header, h1, header nav ul li {
+        background: rgb(57, 171, 236);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header, h1, nav ul li {
+        text-shadow: 2px 2px #253dc4;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header, h1, header nav ul li {
+        box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+/* NUESTRA HISTORIA */
+@media screen and (max-width: 480px) {
+    .fotofrente {
+        
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fotofrente {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .lic1, .lic, h2, ul li {
+       color: rgb(46, 25, 230);
+    }
+}
+
+
+
+/* OFERTA EDUCATIVA */
+@media screen and (max-width: 480px) {
+    .one, .seven {
+        background-color: rgb(28, 14, 155);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .one, .seven {
+        background-color: rgb(28, 14, 155);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .one, .seven {
+        background-color: rgb(28, 14, 155);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        background-color: rgb(13, 138, 211);
+        grid-template-columns: repeat(2, 20%);
+        grid-template-rows: repeat(2, 20%);
+        text-decoration: cornsilk;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-color: rgb(211, 13, 135);
+        grid-template-columns: repeat(2, 20%);
+        grid-template-rows: repeat(2, 20%);
+        text-decoration: cornsilk;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        background-color: rgb(0, 208, 223);
+        grid-template-columns: repeat(auto-fill, 20%);
+        grid-template-rows: repeat(auto-fill, 20%);
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .two, .three, .four, .five, .six, .eight, .nine, .ten, .eleven {
+        background-image: radial-gradient(rgb(255, 255, 255),red);
+        box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border: 5px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .two, .three, .four, .five, .six, .eight, .nine, .ten, .eleven {
+        background-image: radial-gradient(rgb(255, 255, 255),red);
+        box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+        border-radius: 15px;
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border: 100px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .two, .three, .four, .five, .six, .eight, .nine, .ten, .eleven {
+        background-image: radial-gradient(rgb(255, 255, 255),red);
+        box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+/* FOOTER */
+@media screen and (max-width: 480px) {
+    .flex-container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
