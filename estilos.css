@@ -1,5 +1,11 @@
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-right:5%;  
+}
+
+a:link  { 
+    text-decoration: none;
 }
 
 .logo {
@@ -8,31 +14,32 @@ html {
     justify-content: center;
 }
 
+.header nav {
+    margin-top: -5px;
+    text-decoration: none;
+}
+
 .header nav ul {
-    background-color: rgba(146, 192, 248, 0.35);
+    background-color: #87C5FF;
+    text-decoration-color: ivory;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header nav ul li {
     list-style-type: none;
-    display: inline-block;
-    margin-left: 70px;
-    font-size: 18px;
-    width: auto;
-    height: auto;
-}
-
-a:link {
-    text-decoration: none;
-    ;
+    display: inline ;
+    font-size: 18px;  
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 33px;
+    font-size: 30px;
     text-decoration: underline;
     position: relative;
-    margin-top: -50px;
+    margin-top: -40px;
     text-align: right;
 }
 
@@ -55,54 +62,62 @@ h5 {
     background: rgb(108, 165, 231);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
     text-decoration: underline;
+    margin-bottom: 0%;
 }
 
 .flex-container-inicio {
-    display: flex;
+    display: flex ;
     flex-direction: row;
-    justify-content: center;
     margin-top: 10px;
-    padding-bottom: 10px;
-    justify-content: space-around;
+    padding-bottom: 10px;;
+    justify-content:space-evenly;
 }
 
-.a {
+.novedades {
     border-radius: 5px;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     margin-top: 5px;
-    text-decoration: black
 }
 
-.a:hover {
+.novedades ul {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+.novedades ul li {
+    list-style-type: none;
+    line-height: 30px; 
+}
+
+.novedades:hover {
     background: cadetblue;
-
 }
 
-.b {
+.importante {
     border-radius: 5px;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     margin-top: 5px;
 }
 
-.b:hover {
+.importante ul {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.importante ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.importante:hover {
     background: cadetblue;
-}
-
-.a ul li {
-    list-style-type: none;
-    line-height: 30px;
-
-}
-
-.b ul li {
-    list-style-type: none;
-    line-height: 30px;
 }
 
 /*APLICAN A NUESTRA HISTORIA*/
@@ -318,7 +333,6 @@ h5 {
     padding-bottom: 10px;
     justify-content: space-around;
     align-content: space-evenly;
-    aling-items: center;
 }
 
 .biblio {
@@ -363,7 +377,6 @@ h5 {
 
 /* Aplican sólo a página contacto */
 /*EMPIEZA FORMULARIO*/
-
 .principal {
     display: block;
     width: 510px;
@@ -419,21 +432,20 @@ iframe {
 /*FOOTER*/
 .footer {
     z-index: 100;
-    bottom: 2%;
     width: 100%;
     height: auto;
     margin-top: 10px;
     box-shadow: 0 12px 5px 0 rgba(31, 38, 135, 0.37);
+    
 }
 
 .flex-container-footer {
-    background-color: rgba(146, 192, 248, 0.35);
+    background-color: #87C5FF;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0%;
-    margin: 0%;
+    padding-bottom: 0rem!important;
 }
 
 .c {
@@ -441,10 +453,17 @@ iframe {
     line-height: 0px;
 }
 
+.whatsapp:hover,
+.instagram:hover,
+.facebook:hover {
+    transform: scale(1.5);
+}
+
 .d {
     text-align: center;
     line-height: 0px;
 }
+
 
 /* MEDIAQUERIES */
 @media screen and (max-width: 480px) {
@@ -462,8 +481,8 @@ iframe {
         align-items: center;
     }
 
-    .a,
-    .b {
+    .novedades,
+    .importante {
         flex-direction: column;
         align-items: center;
         width: auto;
