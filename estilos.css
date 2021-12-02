@@ -6,12 +6,22 @@ html {
 
 a:link  { 
     text-decoration: none;
+    color: black;
 }
 
 .logo {
     position: relative;
     z-index: 100;
     justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+} 
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .header nav {
