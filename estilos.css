@@ -316,7 +316,8 @@ h5 {
     justify-content: center;
     margin-top: 10px;
     padding-bottom: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-content: space-evenlyeen;
 }
 
 .biblio {
