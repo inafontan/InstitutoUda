@@ -55,7 +55,7 @@ h5 {
     text-decoration: underline;
 }
 
-.flex-container {
+.flex-container-inicio {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -394,115 +394,37 @@ iframe {
 }
 
 /* MEDIAQUERIES */
-
-/* GENERAL A TODAS LAS PAGS */
 @media screen and (max-width: 480px) {
-
-    h1,
+    /* GENERAL A TODAS LAS PAGS */
+    h1, 
     header nav ul li {
         background: rgb(57, 171, 236);
         background-size: contain;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    h1,
-    nav ul li {
-        text-shadow: 2px 1px #ffffff;
+    /* INDEX */
+    .flex-container-inicio {
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media screen and (max-width: 1024px) {
-
-    h1,
-    header nav ul li {
-        box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 20px;
-    }
-}
-
-
-/* NUESTRA HISTORIA */
-@media screen and (max-width: 480px) {
+    /* NUESTRA HISTORIA */
     .fotofrente {
         display: none;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .fotofrente {
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .lic1,
-    .lic,
-    h2,
-    ul li {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-}
-
-/* OFERTA EDUCATIVA */
-
-@media screen and (max-width: 480px) {
-
-    .one,
+    /* OFERTA EDUCATIVA */
+    .one, 
     .seven {
         background-color: rgb(205, 203, 228);
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .one,
-    .seven {
-        background-color: rgb(205, 203, 228);
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-    .one,
-    .seven {
-        background-color: rgb(205, 203, 228);
-    }
-}
-
-@media screen and (max-width: 480px) {
     .container {
         background-color: rgb(13, 138, 211);
         grid-template-columns: repeat(2, 20%);
         grid-template-rows: repeat(2, 20%);
         text-decoration: cornsilk;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        background-color: rgb(211, 13, 135);
-        grid-template-columns: repeat(2, 20%);
-        grid-template-rows: repeat(2, 20%);
-        text-decoration: cornsilk;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .container {
-        background-color: rgb(0, 208, 223);
-        grid-template-columns: repeat(auto-fill, 20%);
-        grid-template-rows: repeat(auto-fill, 20%);
-
-    }
-}
-
-@media screen and (max-width: 480px) {
 
     .two,
     .three,
@@ -519,9 +441,51 @@ iframe {
         -webkit-backdrop-filter: blur(20px);
         border: 5px solid rgba(255, 255, 255, 0.18);
     }
+
+    /* PAGINA CONTACTO */
+    .flex-container-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+      /* FOOTER */
+    .flex-container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    /* GENERAL A TODAS LAS PAGS */
+    h1,
+    nav ul li {
+        text-shadow: 2px 1px #ffffff;
+    }
+
+    /* NUESTRA HISTORIA */
+    .fotofrente { 
+        width: auto;
+    }
+
+    .lic1, 
+    .lic,
+    h2,
+    ul li {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+     /* OFERTA EDUCATIVA */
+     .one,
+     .seven {
+         background-color: rgb(205, 203, 228);
+     }
+
+     .container {
+        background-color: rgb(211, 13, 135);
+        grid-template-columns: repeat(2, 20%);
+        grid-template-rows: repeat(2, 20%);
+        text-decoration: cornsilk;
+    }
 
     .two,
     .three,
@@ -539,9 +503,36 @@ iframe {
         -webkit-backdrop-filter: blur(20px);
         border: 100px solid rgba(255, 255, 255, 0.18);
     }
+
+    /* PAGINA CONTACTO */
+    .flex-container-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    /* GENERAL A TODAS LAS PAGS */
+    h1,
+    header nav ul li {
+        box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+    }
+
+    /* OFERTA EDUCATIVA */
+    .one,
+    .seven {
+        background-color: rgb(205, 203, 228);
+    }
+
+    .container {
+        background-color: rgb(0, 208, 223);
+        grid-template-columns: repeat(auto-fill, 20%);
+        grid-template-rows: repeat(auto-fill, 20%);
+    }
 
     .two,
     .three,
@@ -558,35 +549,10 @@ iframe {
         -webkit-backdrop-filter: blur(20px);
         border: 1px solid rgba(255, 255, 255, 0.18);
     }
-}
 
-/* PAGINA CONTACTO */
-
-@media screen and (max-width: 480px) {
+    /* PAGINA CONTACTO */
     .flex-container-contacto {
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .flex-container-contacto {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .flex-container-contacto {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* FOOTER */
-@media screen and (max-width: 480px) {
-    .flex-container-footer {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+} 
