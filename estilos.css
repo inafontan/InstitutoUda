@@ -310,9 +310,9 @@ h5 {
 /* TERMINA GRID OFERTA EDUCATIVA */
 
 /* BIBLIOUNIPE */
-.lex-container-biblio {
+.flex-container-biblio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-top: 10px;
     padding-bottom: 10px;
