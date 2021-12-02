@@ -17,6 +17,8 @@ html {
     display: inline-block;
     margin-left: 70px;
     font-size: 18px;
+    width: auto;
+    height: auto;
 }
 
 a:link {
@@ -153,7 +155,6 @@ h5 {
 }
 
 /* GRID OFERTA EDUCATIVA */
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -169,7 +170,7 @@ h5 {
 
 .one {
     animation-name: animate__tada;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 4s;
     font-size: 18px;
@@ -179,22 +180,25 @@ h5 {
     justify-self: center;
     align-self: center;
     grid-area: one;
-    
 }
 
 @keyframes animate__tada {
     0% {
         transform: scale (1);
     }
+
     25% {
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
+
     50% {
         transform: scale(1);
     }
+
     75% {
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
+
     100% {
         transform: scale(1);
     }
@@ -207,7 +211,7 @@ h5 {
     justify-items: stretch;
     align-items: stretch;
     align-content: space-between;
-    grid-area: two;  
+    grid-area: two;
 }
 
 .three {
@@ -248,7 +252,7 @@ h5 {
 
 .seven {
     animation-name: animate__tada;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 4s;
     font-size: 18px;
@@ -348,7 +352,6 @@ textarea {
     cursor: pointer;
     letter-spacing: 1px;
 }
-
 /*TERMINA FORMULARIO*/
 
 iframe {
@@ -365,7 +368,6 @@ iframe {
 /*FOOTER*/
 .footer {
     z-index: 100;
-
     bottom: 2%;
     width: 100%;
     height: auto;
@@ -395,8 +397,9 @@ iframe {
 
 /* MEDIAQUERIES */
 @media screen and (max-width: 480px) {
+
     /* GENERAL A TODAS LAS PAGS */
-    h1, 
+    h1,
     header nav ul li {
         background: rgb(57, 171, 236);
         background-size: contain;
@@ -408,13 +411,21 @@ iframe {
         align-items: center;
     }
 
+    .a,
+    .b {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
     /* NUESTRA HISTORIA */
     .fotofrente {
         display: none;
     }
 
     /* OFERTA EDUCATIVA */
-    .one, 
+    .one,
     .seven {
         background-color: rgb(205, 203, 228);
     }
@@ -448,7 +459,7 @@ iframe {
         align-items: center;
     }
 
-      /* FOOTER */
+    /* FOOTER */
     .flex-container-footer {
         flex-direction: column;
         align-items: center;
@@ -463,24 +474,24 @@ iframe {
     }
 
     /* NUESTRA HISTORIA */
-    .fotofrente { 
+    .fotofrente {
         width: auto;
     }
 
-    .lic1, 
+    .lic1,
     .lic,
     h2,
     ul li {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
-     /* OFERTA EDUCATIVA */
-     .one,
-     .seven {
-         background-color: rgb(205, 203, 228);
-     }
+    /* OFERTA EDUCATIVA */
+    .one,
+    .seven {
+        background-color: rgb(205, 203, 228);
+    }
 
-     .container {
+    .container {
         background-color: rgb(211, 13, 135);
         grid-template-columns: repeat(2, 20%);
         grid-template-rows: repeat(2, 20%);
@@ -512,6 +523,7 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
+
     /* GENERAL A TODAS LAS PAGS */
     h1,
     header nav ul li {
@@ -555,4 +567,4 @@ iframe {
         flex-direction: column;
         align-items: center;
     }
-} 
+}
