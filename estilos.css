@@ -310,13 +310,13 @@ h5 {
 /* TERMINA GRID OFERTA EDUCATIVA */
 
 /* BIBLIOUNIPE */
-.flex-container-biblio {
+.flex-container-bibliouni {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
     padding-bottom: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .biblio {
