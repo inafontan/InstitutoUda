@@ -318,13 +318,14 @@ h5 {
     padding-bottom: 10px;
     justify-content: space-around;
     align-content: space-evenlyeen;
+    aling-items: center;
 }
 
 .biblio {
     border-radius: 5px;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-    width: auto;
+    width: 300px;
     height: 300px;
     margin-top: 5px;
     text-decoration: black
@@ -334,7 +335,7 @@ h5 {
     border-radius: 5px;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-    width: auto;
+    width: 300px;
     height: 300px;
     margin-top: 5px;
     text-decoration: black
@@ -344,7 +345,7 @@ h5 {
     border-radius: 5px;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-    width: auto;
+    width: 300px;
     height: 300px;
     margin-top: 5px;
     text-decoration: black
@@ -354,7 +355,7 @@ h5 {
     border-radius: 5px;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-    width: auto;
+    width: 300px;
     height: 300px;
     margin-top: 5px;
     text-decoration: black
