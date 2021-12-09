@@ -1,0 +1,26 @@
+{
+  "name": "institutouda",
+  "version": "1.0.0",
+  "description": "Web Instituto",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inafontan/InstitutoUda.git"
+  },
+  "author": "Roxana Fontán",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inafontan/InstitutoUda/issues"
+  },
+  "homepage": "https://github.com/inafontan/InstitutoUda#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

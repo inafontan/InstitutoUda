@@ -198,7 +198,7 @@ h5 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 4s;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     background: rgba(146, 192, 248, 0.35);
     border-radius: 5px;
@@ -213,7 +213,7 @@ h5 {
     }
 
     25% {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 
     50% {
@@ -221,7 +221,7 @@ h5 {
     }
 
     75% {
-        transform: scale(1.5);
+        transform: scale(1.2npm init);
     }
 
     100% {
@@ -280,7 +280,7 @@ h5 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 4s;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     background: rgba(146, 192, 248, 0.35);
     border-radius: 5px;
@@ -511,10 +511,15 @@ iframe {
     }
 
     .container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
         background-color: rgb(13, 138, 211);
-        grid-template-columns: repeat(2, 20%);
-        grid-template-rows: repeat(2, 20%);
-        text-decoration: cornsilk;
+        grid-template: subgrid ;
+        /* grid-template-columns: repeat(2, 20%);
+        grid-template-rows: repeat(2, 20%); */
+        text-decoration: cornsilk; 
     }
 
     .two,
@@ -531,6 +536,7 @@ iframe {
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border: 5px solid rgba(255, 255, 255, 0.18);
+        display: grid;
     }
 
     /* PAGINA CONTACTO */
@@ -572,6 +578,10 @@ iframe {
     }
 
     .container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
         background-color: rgb(211, 13, 135);
         grid-template-columns: repeat(2, 20%);
         grid-template-rows: repeat(2, 20%);
