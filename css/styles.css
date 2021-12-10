@@ -411,7 +411,7 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .redes {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; } }
 
 @media screen and (min-width: 1024px) {
