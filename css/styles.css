@@ -308,7 +308,13 @@ textarea {
   transform: scale(1.5); }
 
 @media screen and (max-width: 480px) {
-  h1 {
+  h1,
+  header nav ul li {
+    box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
     background: #39abec;
     background-size: contain; }
   .flex-container-inicio {
