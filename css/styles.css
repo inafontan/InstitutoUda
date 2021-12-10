@@ -408,10 +408,10 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .flex-container-footer {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; }
   .redes {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; } }
 
 @media screen and (min-width: 1024px) {
