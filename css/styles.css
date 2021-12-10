@@ -384,7 +384,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-items: auto;
     background-color: #580438;
     grid-template-columns: repeat(2, 20%);
     grid-template-rows: repeat(2, 20%);
@@ -399,11 +399,11 @@ textarea {
   .ten,
   .eleven {
     background-image: radial-gradient(white, red);
-    box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 2px 5px 0 rgba(214, 119, 238, 0.37);
     border-radius: 15px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 100px solid rgba(255, 255, 255, 0.18); }
+    border: 0.625rem solid rgba(255, 255, 255, 0.18); }
   .flex-container-contacto {
     flex-direction: column;
     align-items: center; }
