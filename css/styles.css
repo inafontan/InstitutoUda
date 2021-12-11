@@ -360,7 +360,7 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .flex-container-footer {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; }
   .c, .d {
     flex-direction: row;
