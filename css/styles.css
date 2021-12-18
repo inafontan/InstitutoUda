@@ -78,6 +78,7 @@ h5 {
     background: cadetblue; }
 
 .btnbiblioteca {
+  width: 250px;
   background-color: #a9bdfc;
   border: 1px solid #0659c5;
   border-radius: 15px;
@@ -248,6 +249,7 @@ h5 {
   box-shadow: 0 0.125rem 0.3125rem 0 black; }
 
 .duracionplan {
+  width: 250px;
   background-color: #a9bdfc;
   border: 1px solid #0659c5;
   border-radius: 15px;
