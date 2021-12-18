@@ -1,0 +1,27 @@
+.container-plan {
+    @include plan;
+}
+
+.tituloparrafo {
+    @include tituloparrafo
+}
+
+.duracionplan {
+    @include unipe;
+    margin-left: 500px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.infoparrafo {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.subtitulo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+

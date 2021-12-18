@@ -1,7 +1,7 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-a:link {
+a:link, :visited, :active {
   text-decoration: none;
   color: black; }
 
@@ -18,8 +18,21 @@ a:link {
   position: relative;
   text-align: right; }
 
+nav {
+  box-shadow: 0 0.125rem 0.3125rem 0 rgba(2, 0, 0, 0.678); }
+
 nav .navbar-nav li a {
   color: black !important; }
+
+h1 {
+  color: black;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #0a0a0a;
+  text-shadow: 1px 1px 2px white, 0 0 25px #138ff5, 0 0 5px #00098b; }
 
 h2 {
   color: black;
@@ -44,42 +57,38 @@ h5 {
   display: flex;
   flex-direction: row;
   margin-top: 1.2500rem;
-  padding-bottom: 0.6250rem;
   justify-content: space-evenly; }
 
-.novedades {
-  border-radius: 0.3125rem;
-  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37);
+.inscripcion, .importante {
   width: 25rem;
   height: 25rem;
-  margin-top: 0.3125rem; }
-  .novedades ul {
+  margin-top: 0.3125rem;
+  margin-left: 20px;
+  border-radius: 0.3125rem;
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+  box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37); }
+  .inscripcion ul, .importante ul {
     margin: 0.6250rem;
     padding: 0.6250rem;
     text-align: justify; }
-    .novedades ul li {
+    .inscripcion ul li, .importante ul li {
       list-style-type: none;
       line-height: 1.875rem; }
-  .novedades:hover {
+  .inscripcion:hover, .importante:hover {
     background: cadetblue; }
 
-.importante {
-  border-radius: 0.3125rem;
-  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37);
-  width: 25rem;
-  height: 25rem;
-  margin-top: 0.3125rem; }
-  .importante ul {
-    margin: 0.6250rem;
-    padding: 0.6250rem;
-    text-align: justify; }
-    .importante ul li {
-      list-style-type: none;
-      line-height: 1.875rem; }
-  .importante:hover {
-    background: cadetblue; }
+.btnbiblioteca {
+  background-color: #a9bdfc;
+  border: 1px solid #0659c5;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 10px;
+  height: 25px; }
+
+.autoridades {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 20px; }
 
 .fotofrente {
   border: 0.1875rem solid black;
@@ -218,13 +227,44 @@ h5 {
     align-items: stretch;
     grid-area: eleven; }
 
-/*.twelve { 
-    background: rgba(146, 192, 248, 0.35); 
-    justify-self: center; 
-    align-self: stretch; 
-    text-align: center;
-    grid-area: twelve; 
-} */
+.container-plan {
+  display: block;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(179, 173, 173, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); }
+
+.tituloparrafo {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #4698c2;
+  box-shadow: 0 0.125rem 0.3125rem 0 black; }
+
+.duracionplan {
+  background-color: #a9bdfc;
+  border: 1px solid #0659c5;
+  border-radius: 15px;
+  margin-left: 500px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.infoparrafo {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.subtitulo {
+  font-weight: bold;
+  text-decoration: underline; }
+
 label {
   display: block;
   margin-top: 0.9375rem;
@@ -275,13 +315,15 @@ textarea {
   margin-top: 5%;
   bottom: 0%;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0 0 0.5rem 0 rgba(2, 0, 0, 0.808); }
 
 .footerhistoria {
   position: relative;
   bottom: 0%;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0 0 0.5rem 0 rgba(2, 0, 0, 0.808); }
 
 .flex-container-footer {
   background-color: #e7ebee;
@@ -308,7 +350,6 @@ textarea {
   transform: scale(1.5); }
 
 @media screen and (max-width: 480px) {
-  h1,
   header nav ul li {
     box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
     backdrop-filter: blur(20px);
@@ -364,7 +405,6 @@ textarea {
     align-items: center; } }
 
 @media screen and (max-width: 768px) {
-  h1,
   header nav ul li {
     box-shadow: 0 2px 5px 0 rgba(63, 60, 219, 0.658);
     backdrop-filter: blur(20px);
@@ -415,12 +455,6 @@ textarea {
     align-items: center; } }
 
 @media screen and (min-width: 1024px) {
-  h1 {
-    box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 20px; }
   .one,
   .seven {
     background-color: #cdcbe4; }

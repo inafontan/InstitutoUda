@@ -1,0 +1,58 @@
+//EMPIEZA FORMULARIO
+ 
+label {
+    display:block;
+    margin-top: 0.9375rem;
+    letter-spacing: 0.0625rem;
+}
+ 
+.principal {
+    display: block;
+    margin: 0 auto;
+    width: 31.875rem;
+    color: #666666;
+    font-family:Arial;
+}
+ 
+form {
+    margin: 0 auto;
+    width: 25rem;
+}
+ 
+input, textarea {
+    width: 23.75rem;
+    height: 1.6875;
+    background: #aedaf7;
+    border: 0.125rem solid #aedaf7;
+    padding: 0.6250rem;
+    margin-top: 0.3125rem;
+    font-size: 0.6250rem;
+    color: #050505;
+}
+ 
+textarea {
+    height: 9.375rem;
+}
+ 
+#submit {
+    width: 23.75rem;
+    height: 2.1875rem;
+    border: none;
+    margin-top: 0.6250rem;
+    margin-bottom: 0.6250rem;
+    cursor: pointer;
+}
+
+//TERMINA FORMULARIO
+
+ .iframe {
+     margin-top: 1.875rem;
+}
+
+
+.flex-container-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

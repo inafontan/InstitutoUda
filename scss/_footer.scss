@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 5%;
+    bottom:0%;
+    width:100%;
+    z-index: 100;
+    box-shadow: 0 0 0.5rem 0  rgba(2, 0, 0, 0.808);
+}
+
+.footerhistoria {
+    position: relative;
+    bottom:0%;
+    width:100%;
+    z-index: 100;
+    box-shadow: 0 0 0.5rem 0  rgba(2, 0, 0, 0.808);
+}
+
+.flex-container-footer{
+    background-color: #e7ebee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.c, .d{
+    text-align:center;
+    line-height: 0rem;  
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram{
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+}
+
+.whatsapp:hover,
+.instagram:hover,
+.facebook:hover{
+    transform: scale(1.5);
+}

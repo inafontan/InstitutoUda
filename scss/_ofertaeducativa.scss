@@ -1,0 +1,145 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 0fr 1fr;
+    gap: 1.2500rem 0.3125rem;
+    grid-template-areas:
+        "one one one one one"
+        "two three four five six"
+        "seven seven seven seven seven"
+        "eight nine ten eleven twelve";
+    padding-bottom: 0.6250rem;
+
+    .one{
+        margin-top: 0.9375rem;
+        animation-name: animate__tada;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        font-size: 1rem;
+        font-weight: bold;
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        justify-self: center;
+        align-self: center;
+        grid-area: one;
+    }
+    
+    @keyframes animate__tada{
+        0%{
+            transform: scale (1);
+        }
+    
+        25%{
+            transform: scale(1.2);
+        }
+    
+        50%{
+            transform: scale(1);
+        }
+    
+        75%{
+            transform: scale(1.2npm init);
+        }
+    
+        100%{
+            transform: scale(1);
+        }
+    }
+    
+    .two{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        align-content: space-between;
+        grid-area: two;
+    }
+    
+    .three{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: three;
+    }
+    
+    .four{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: four;
+    }
+    
+    .five{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: five;
+    }
+    
+    .six{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: six;
+    }
+    
+    .seven{
+        animation-name: animate__tada;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        font-size: 1rem;
+        font-weight: bold;
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        justify-self: center;
+        align-self: center;
+        grid-area: seven;
+    }
+    
+    .eight{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: eight;
+    }
+    
+    .nine{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: nine;
+    }
+    
+    .ten{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: ten;
+    }
+    
+    .eleven{
+        background: rgba(146, 192, 248, 0.35);
+        border-radius: 0.3125rem;
+        text-align: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: eleven;
+    }
+}
