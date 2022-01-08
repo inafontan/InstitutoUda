@@ -47,11 +47,11 @@ h4 {
 
 h5 {
   color: black;
-  font-size: 1.2500rem;
+  font-size: 16px;
   background: #6ca5e7;
   box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
   text-decoration: underline;
-  margin-top: 0.9375rem; }
+  margin-top: 12px; }
 
 .flex-container-inicio {
   display: flex;
@@ -267,24 +267,22 @@ h5 {
   font-weight: bold;
   text-decoration: underline; }
 
+.flex-container-contacto {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.2500rem;
+  justify-content: space-evenly; }
+
 label {
-  display: block;
+  display: flex;
   margin-top: 0.9375rem;
   letter-spacing: 0.0625rem; }
 
-.principal {
-  display: block;
-  margin: 0 auto;
-  width: 31.875rem;
-  color: #666666;
-  font-family: Arial; }
-
 form {
-  margin: 0 auto;
-  width: 25rem; }
+  width: 300px; }
 
 input, textarea {
-  width: 23.75rem;
+  width: 300px;
   height: 1.6875;
   background: #aedaf7;
   border: 0.125rem solid #aedaf7;
@@ -297,21 +295,15 @@ textarea {
   height: 9.375rem; }
 
 #submit {
-  width: 23.75rem;
+  width: 300px;
   height: 2.1875rem;
   border: none;
   margin-top: 0.6250rem;
   margin-bottom: 0.6250rem;
   cursor: pointer; }
 
-.iframe {
+.ubicacion {
   margin-top: 1.875rem; }
-
-.flex-container-contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
 
 .footer {
   margin-top: 5%;
@@ -351,24 +343,26 @@ textarea {
 .facebook:hover {
   transform: scale(1.5); }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   header nav ul li {
-    box-shadow: 0 2px 5px 0 rgba(33, 30, 223, 0.37);
+    box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 20px;
     background: rgba(130, 194, 231, 0.781);
     background-size: contain; }
   .flex-container-inicio {
+    display: flex;
     flex-direction: column;
     align-items: center; }
-  .novedades,
+  .inscripcion, .importante,
   .importante {
     flex-direction: column;
     align-items: center;
     width: auto;
-    height: auto; }
+    height: auto;
+    margin-left: 0%;
+    margin-bottom: 5px; }
   .fotofrente {
     display: none; }
   .one,
@@ -379,10 +373,8 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background-color: #074b72;
+    background-color: #c5c5c5;
     grid-template: subgrid;
-    /* grid-template-columns: repeat(2, 20%);
-        grid-template-rows: repeat(2, 20%); */
     text-decoration: cornsilk; }
   .two,
   .three,
@@ -393,22 +385,24 @@ textarea {
   .nine,
   .ten,
   .eleven {
-    background-image: radial-gradient(white, red);
-    box-shadow: 0 2px 5px 0 rgba(157, 222, 252, 0.37);
+    background-image: rgba(207, 214, 216, 0.836);
+    box-shadow: 0 2px 5px 0 rgba(167, 167, 167, 0.719);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 5px solid rgba(255, 255, 255, 0.18);
     display: grid; }
   .flex-container-contacto {
+    display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-items: center; }
   .flex-container-footer {
     flex-direction: column;
     align-items: center; } }
 
 @media screen and (max-width: 768px) {
   header nav ul li {
-    box-shadow: 0 2px 5px 0 rgba(63, 60, 219, 0.658);
+    box-shadow: 0 2px 5px 0 #7ddff0a8;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -430,7 +424,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-items: auto;
-    background-color: #580438;
+    background-color: #e6e6e6;
     grid-template-columns: repeat(2, 20%);
     grid-template-rows: repeat(2, 20%);
     text-decoration: cornsilk; }
@@ -444,14 +438,16 @@ textarea {
   .ten,
   .eleven {
     background-image: radial-gradient(white, red);
-    box-shadow: 0 2px 5px 0 rgba(214, 119, 238, 0.37);
+    box-shadow: 0 2px 5px 0 rgba(5, 27, 150, 0.658);
     border-radius: 15px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 0.625rem solid rgba(255, 255, 255, 0.18); }
   .flex-container-contacto {
+    display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-items: center; }
   .flex-container-footer {
     flex-direction: column;
     align-items: center; } }
