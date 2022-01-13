@@ -1,5 +1,5 @@
 html {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 a:link, :visited, :active {
   text-decoration: none;
@@ -11,7 +11,6 @@ a:link, :visited, :active {
   justify-content: center; }
 
 .nombreinstituto {
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-size: 1rem;
   font-weight: bold;
@@ -47,7 +46,7 @@ h4 {
 
 h5 {
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   background: #6ca5e7;
   box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
   text-decoration: underline;
@@ -56,7 +55,9 @@ h5 {
 .flex-container-inicio {
   display: flex;
   flex-direction: row;
-  margin-top: 1.2500rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
   justify-content: space-evenly; }
 
 .inscripcion, .importante {
@@ -79,12 +80,12 @@ h5 {
 
 .btnbiblioteca {
   width: 250px;
-  background-color: #a9bdfc;
-  border: 1px solid #0659c5;
-  border-radius: 15px;
-  text-align: center;
-  margin-right: 10px;
-  height: 25px; }
+  height: 85px;
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37); }
+  .btnbiblioteca:hover {
+    transform: scale(1.1); }
 
 .autoridades {
   margin-right: 15px;
@@ -96,36 +97,31 @@ h5 {
   display: flex;
   flex-direction: row;
   float: right;
-  margin-top: -20rem;
-  transition: transform 3s; }
-  .fotofrente :hover {
-    transform: scale(1.2); }
+  margin-top: -20rem; }
 
-.historia {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify; }
+.historia, .capdistancia, .nuestro {
+  text-align: justify;
+  color: black; }
 
-.capdistancia {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: justify; }
-
-.nuestro {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify; }
+.flex-container-fin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .lic {
   font-weight: bold; }
 
+.ir-arriba :hover {
+  transform: scale(1.2); }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0fr 1fr 0fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1.2500rem 0.3125rem;
   grid-template-areas: "one one one one one" "two three four five six" "seven seven seven seven seven" "eight nine ten eleven twelve";
-  padding-bottom: 0.6250rem; }
+  padding-bottom: 0.6250rem;
+  margin-bottom: 4.5rem; }
   .container .one {
     margin-top: 0.9375rem;
     animation-name: animate__tada;
@@ -134,7 +130,7 @@ h5 {
     animation-duration: 4s;
     font-size: 1rem;
     font-weight: bold;
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(119, 178, 250, 0.644);
     border-radius: 0.3125rem;
     justify-self: center;
     align-self: center;
@@ -152,7 +148,7 @@ h5 {
   100% {
     transform: scale(1); } }
   .container .two {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
@@ -160,32 +156,36 @@ h5 {
     align-content: space-between;
     grid-area: two; }
   .container .three {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: three; }
   .container .four {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: four; }
   .container .five {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: five; }
   .container .six {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: six; }
   .container .seven {
     animation-name: animate__tada;
@@ -194,38 +194,42 @@ h5 {
     animation-duration: 4s;
     font-size: 1rem;
     font-weight: bold;
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(119, 178, 250, 0.644);
     border-radius: 0.3125rem;
     justify-self: center;
     align-self: center;
     grid-area: seven; }
   .container .eight {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: eight; }
   .container .nine {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: nine; }
   .container .ten {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: ten; }
   .container .eleven {
-    background: rgba(146, 192, 248, 0.35);
+    background: rgba(226, 226, 226, 0.555);
     border-radius: 0.3125rem;
     text-align: center;
     justify-items: stretch;
     align-items: stretch;
+    margin-left: 5px;
     grid-area: eleven; }
 
 .container-plan {
@@ -249,11 +253,6 @@ h5 {
   box-shadow: 0 0.125rem 0.3125rem 0 black; }
 
 .duracionplan {
-  width: 250px;
-  background-color: #a9bdfc;
-  border: 1px solid #0659c5;
-  border-radius: 15px;
-  margin-left: 500px;
   text-align: center;
   font-weight: bold;
   text-decoration: underline; }
@@ -275,19 +274,19 @@ h5 {
 
 label {
   display: flex;
-  margin-top: 0.9375rem;
-  letter-spacing: 0.0625rem; }
+  margin-top: 0.6rem;
+  letter-spacing: 0.0625rem;
+  font-family: Arial, Helvetica, sans-serif; }
 
 form {
-  width: 300px; }
+  width: 320px; }
 
 input, textarea {
-  width: 300px;
+  width: 320px;
   height: 1.6875;
   background: #aedaf7;
   border: 0.125rem solid #aedaf7;
   padding: 0.6250rem;
-  margin-top: 0.3125rem;
   font-size: 0.6250rem;
   color: #050505; }
 
@@ -295,7 +294,7 @@ textarea {
   height: 9.375rem; }
 
 #submit {
-  width: 300px;
+  width: 320px;
   height: 2.1875rem;
   border: none;
   margin-top: 0.6250rem;
@@ -303,23 +302,14 @@ textarea {
   cursor: pointer; }
 
 .ubicacion {
-  margin-top: 1.875rem; }
-
-.footer {
-  margin-top: 5%;
-  bottom: 0%;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 0 0.5rem 0 rgba(2, 0, 0, 0.808); }
-
-.footerhistoria {
-  position: relative;
-  bottom: 0%;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 0 0.5rem 0 rgba(2, 0, 0, 0.808); }
+  margin-top: 1rem; }
 
 .flex-container-footer {
+  margin-top: 2%;
+  bottom: 0%;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 0.5rem 0 rgba(2, 0, 0, 0.808);
   background-color: #e7ebee;
   display: flex;
   flex-direction: row;
@@ -343,6 +333,13 @@ textarea {
 .facebook:hover {
   transform: scale(1.5); }
 
+.footerhistoria {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 0.5rem 0 rgba(2, 0, 0, 0.808); }
+
 @media screen and (max-width: 320px) {
   header nav ul li {
     box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
@@ -362,6 +359,63 @@ textarea {
     width: auto;
     height: auto;
     margin-left: 0%;
+    margin-bottom: 5px;
+    font-size: 1rem; }
+  .fotofrente {
+    display: none; }
+  .one,
+  .seven {
+    background-color: #f4f4f8; }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    grid-template: subgrid;
+    text-decoration: cornsilk;
+    background-color: #f4f4f8; }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .eight,
+  .nine,
+  .ten,
+  .eleven {
+    box-shadow: 0 2px 5px 0 rgba(167, 167, 167, 0.719);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 5px solid rgba(255, 255, 255, 0.18);
+    display: grid; }
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .flex-container-footer {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 480px) {
+  header nav ul li {
+    width: auto;
+    box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(130, 194, 231, 0.781);
+    background-size: contain; }
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .inscripcion, .importante,
+  .importante {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin-left: 0%;
     margin-bottom: 5px; }
   .fotofrente {
     display: none; }
@@ -373,7 +427,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background-color: #c5c5c5;
+    background-color: white;
     grid-template: subgrid;
     text-decoration: cornsilk; }
   .two,
@@ -385,7 +439,7 @@ textarea {
   .nine,
   .ten,
   .eleven {
-    background-image: rgba(207, 214, 216, 0.836);
+    background-image: rgba(250, 250, 250, 0.836);
     box-shadow: 0 2px 5px 0 rgba(167, 167, 167, 0.719);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -394,28 +448,41 @@ textarea {
   .flex-container-contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center; }
+    align-items: center; }
   .flex-container-footer {
     flex-direction: column;
     align-items: center; } }
 
 @media screen and (max-width: 768px) {
   header nav ul li {
+    background-color: #97b7f3;
     box-shadow: 0 2px 5px 0 #7ddff0a8;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     border-radius: 20px; }
   h1 {
     text-shadow: 2px 1px #ffffff; }
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .inscripcion, .importante,
+  .importante,
+  .btnbiblioteca {
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: auto;
+    margin-left: 0%;
+    margin-bottom: 5px; }
   .fotofrente {
-    width: auto; }
+    display: none; }
   .lic1,
   .lic,
   h2,
   ul li {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    font-family: sans-serif; }
   .one,
   .seven {
     background-color: #cdcbe4; }
@@ -424,7 +491,6 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-items: auto;
-    background-color: #e6e6e6;
     grid-template-columns: repeat(2, 20%);
     grid-template-rows: repeat(2, 20%);
     text-decoration: cornsilk; }
@@ -437,6 +503,7 @@ textarea {
   .nine,
   .ten,
   .eleven {
+    width: 600px;
     background-image: radial-gradient(white, red);
     box-shadow: 0 2px 5px 0 rgba(5, 27, 150, 0.658);
     border-radius: 15px;
@@ -449,10 +516,38 @@ textarea {
     align-items: center;
     justify-items: center; }
   .flex-container-footer {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; } }
 
 @media screen and (min-width: 1024px) {
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .inscripcion, .importante,
+  .importante {
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    margin-left: 0%;
+    margin-bottom: 5px; }
+  .btnbiblioteca {
+    flex-direction: row;
+    align-self: flex-start;
+    width: 300px;
+    height: auto;
+    margin-left: 0%; }
+  .fotofrente {
+    border: 0.1875rem solid #000b70;
+    display: flex;
+    float: right;
+    margin-top: -20rem; }
+  .lic1,
+  .lic,
+  h2,
+  ul li {
+    font-family: sans-serif; }
   .one,
   .seven {
     background-color: #cdcbe4; }
@@ -473,5 +568,84 @@ textarea {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18); }
+  .flex-container-footer {
+    bottom: 0; } }
+
+@media screen and (min-width: 1200px) {
+  .fotofrente {
+    border: 0.1875rem solid #000b70;
+    display: flex;
+    float: right;
+    margin-top: -20rem;
+    transition: transform 3s; }
+    .fotofrente :hover {
+      transform: scale(1.2); }
+  .lic1,
+  .lic,
+  h2,
+  ul li {
+    font-family: sans-serif; }
+  .one,
+  .seven {
+    background-color: #cdcbe4; }
+  .container {
+    grid-template-columns: repeat(auto-fill, 20%);
+    grid-template-rows: repeat(auto-fill, 20%); }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .eight,
+  .nine,
+  .ten,
+  .eleven {
+    background-image: radial-gradient(white, red);
+    box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18); }
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+  .flex-container-footer {
+    bottom: 0; } }
+
+@media screen and (min-width: 1920px) {
+  .fotofrente {
+    border: 0.1875rem solid #000b70;
+    display: flex;
+    float: right;
+    margin-top: -20rem;
+    transition: transform 3s; }
+    .fotofrente :hover {
+      transform: scale(1.2); }
+  .one,
+  .seven {
+    background-color: #cdcbe4; }
+  .container {
+    grid-template-columns: repeat(auto-fill, 20%);
+    grid-template-rows: repeat(auto-fill, 20%); }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .eight,
+  .nine,
+  .ten,
+  .eleven {
+    background-image: radial-gradient(white, red);
+    box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18); }
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center; }
   .flex-container-footer {
     bottom: 0; } }

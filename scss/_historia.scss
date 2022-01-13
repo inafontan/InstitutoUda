@@ -4,38 +4,33 @@
     margin-top: 20px; 
 }
 
-
 .fotofrente{
     border: 0.1875rem solid black;
     display: flex;
     flex-direction: row;
     float: right;
     margin-top: -20rem;
-    transition: transform 3s;
-
-    & :hover{
-        transform: scale(1.2);
-    }
 }
 
 .historia{
-    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    color: black;
 }
 
-.capdistancia{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: justify;
+.capdistancia, .nuestro{
+    @extend .historia;
 }
 
-.nuestro{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+.flex-container-fin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .lic{
     font-weight: bold; 
+}
+
+.ir-arriba :hover{
+    transform: scale(1.2);
 }

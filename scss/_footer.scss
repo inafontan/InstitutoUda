@@ -1,20 +1,9 @@
-.footer {
-    margin-top: 5%;
-    bottom:0%;
-    width:100%;
-    z-index: 100;
-    box-shadow: 0 0 0.5rem 0  rgba(2, 0, 0, 0.808);
-}
-
-.footerhistoria {
-    position: relative;
-    bottom:0%;
-    width:100%;
-    z-index: 100;
-    box-shadow: 0 0 0.5rem 0  rgba(2, 0, 0, 0.808);
-}
-
 .flex-container-footer{
+    margin-top: 2%;
+    bottom:0%;
+    width:100%;
+    z-index: 100;
+    box-shadow: 0 0 0.5rem 0  rgba(2, 0, 0, 0.808);
     background-color: #e7ebee;
     display: flex;
     flex-direction: row;
@@ -41,4 +30,12 @@
 .instagram:hover,
 .facebook:hover{
     transform: scale(1.5);
+}
+
+.footerhistoria {
+    position: relative;
+    bottom:0%;
+    width:100%;
+    z-index: 100;
+    box-shadow: 0 0 0.5rem 0  rgba(2, 0, 0, 0.808);
 }
