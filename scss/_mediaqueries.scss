@@ -1,13 +1,12 @@
 // MEDIAQUERIES 
 
 @media screen and (max-width: 320px){
+
     // GENERAL A TODAS LAS PAGS 
     header nav ul li{
         box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
         border: 1px solid rgba(255, 255, 255, 0.18);
-        background: rgba(130, 194, 231, 0.781);
+        background: rgba(69, 110, 245, 0.781);
         background-size: contain;
     }
 
@@ -23,7 +22,6 @@
         flex-direction: column;
         align-items: center;
         width: auto;
-        height: auto;
         margin-left: 0%;
         margin-bottom: 5px;
         font-size: 1rem;
@@ -35,35 +33,13 @@
     }
 
     // OFERTA EDUCATIVA 
-    .one,
-    .seven {
-        background-color: rgb(244, 244, 248);
-    }
-
-    .container {
+    .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
         grid-template: subgrid;
         text-decoration: cornsilk; 
-        background-color: rgb(244, 244, 248);
-    }
-
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
-    .eight,
-    .nine,
-    .ten,
-    .eleven {
-        box-shadow: 0 2px 5px 0 rgba(167, 167, 167, 0.719);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 5px solid rgba(255, 255, 255, 0.18);
-        display: grid;
     }
 
     // PAGINA CONTACTO 
@@ -75,9 +51,11 @@
 
     // FOOTER 
     .flex-container-footer {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 @media screen and (max-width: 480px){
@@ -115,36 +93,13 @@
     }
 
     // OFERTA EDUCATIVA 
-    .one,
-    .seven {
-        background-color: rgb(205, 203, 228);
-    }
-
-    .container {
-        display:flex;
+    .container{
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        background-color: rgb(255, 255, 255);
         grid-template: subgrid;
         text-decoration: cornsilk; 
-    }
-
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
-    .eight,
-    .nine,
-    .ten,
-    .eleven {
-        background-image: rgba(250, 250, 250, 0.836);
-        box-shadow: 0 2px 5px 0 rgba(167, 167, 167, 0.719);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 5px solid rgba(255, 255, 255, 0.18);
-        display: grid;
     }
 
     // PAGINA CONTACTO 
@@ -161,11 +116,11 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
+
     // GENERAL A TODAS LAS PAGS
     header nav ul li{
-        background-color: rgb(151, 183, 243);
-        box-shadow: 0 2px 5px 0 #7ddff0a8;
+         
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border: 2px solid rgba(255, 255, 255, 0.18);
@@ -188,7 +143,7 @@
     .btnbiblioteca{
         flex-direction: column;
         align-items: center;
-        width: 600px;
+        width: auto;
         height: auto;
         margin-left: 0%;
         margin-bottom: 5px;
@@ -204,40 +159,6 @@
     h2,
     ul li{
         font-family: sans-serif;
-    }
-
-    // OFERTA EDUCATIVA 
-    .one,
-    .seven{
-        background-color: rgb(205, 203, 228);
-    }
-
-    .container{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items:auto;
-        grid-template-columns: repeat(2, 20%);
-        grid-template-rows: repeat(2, 20%);
-        text-decoration: cornsilk;
-    }
-
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
-    .eight,
-    .nine,
-    .ten,
-    .eleven{
-        width: 600px;
-        background-image: radial-gradient(rgb(255, 255, 255), red);
-        box-shadow: 0 2px 5px 0 rgba(5, 27, 150, 0.658);
-        border-radius: 15px;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 0.6250rem solid rgba(255, 255, 255, 0.18);
     }
 
     // PAGINA CONTACTO 
@@ -296,158 +217,11 @@
     ul li{
         font-family: sans-serif;
     }
-       
-    // OFERTA EDUCATIVA 
-    .one,
-    .seven{
-        background-color: rgb(205, 203, 228);
-    }
-
-    .container{
-        // background-color: rgb(137, 183, 252);
-        grid-template-columns: repeat(auto-fill, 20%);
-        grid-template-rows: repeat(auto-fill, 20%);
-    }
-
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
-    .eight,
-    .nine,
-    .ten,
-    .eleven{
-        background-image: radial-gradient(rgb(255, 255, 255), red);
-        box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
 
     // PAGINA CONTACTO 
     .flex-container-contacto {
         display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-
-    // FOOTER 
-    .flex-container-footer{
-        bottom: 0;
-    }
-}
-
-@media screen and (min-width: 1200px){
-
-    // NUESTRA HISTORIA
-    .fotofrente{
-        border: 0.1875rem solid rgb(0, 11, 112);
-        display: flex;
-        float: right;
-        margin-top: -20rem;
-        transition: transform 3s;
-
-    & :hover{
-        transform: scale(1.2);
-    }
-}
-
-    .lic1,
-    .lic,
-    h2,
-    ul li{
-        font-family: sans-serif;
-    }
-    
-    // OFERTA EDUCATIVA 
-    .one,
-    .seven{
-        background-color: rgb(205, 203, 228);
-    }
-
-    .container{
-        grid-template-columns: repeat(auto-fill, 20%);
-        grid-template-rows: repeat(auto-fill, 20%);
-    }
-
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
-    .eight,
-    .nine,
-    .ten,
-    .eleven{
-        background-image: radial-gradient(rgb(255, 255, 255), red);
-        box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    // PAGINA CONTACTO 
-    .flex-container-contacto {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-
-    // FOOTER 
-    .flex-container-footer{
-        bottom: 0;
-    }
-}
-
-@media screen and (min-width: 1920px){
-
-    // NUESTRA HISTORIA
-    .fotofrente{
-        border: 0.1875rem solid rgb(0, 11, 112);
-        display: flex;
-        float: right;
-        margin-top: -20rem;
-        transition: transform 3s;
-
-    & :hover{
-        transform: scale(1.2);
-    }
-}
-
-    // OFERTA EDUCATIVA 
-    .one,
-    .seven{
-        background-color: rgb(205, 203, 228);
-    }
-
-    .container{
-        grid-template-columns: repeat(auto-fill, 20%);
-        grid-template-rows: repeat(auto-fill, 20%);
-    }
-
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
-    .eight,
-    .nine,
-    .ten,
-    .eleven{
-        background-image: radial-gradient(rgb(255, 255, 255), red);
-        box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    // PAGINA CONTACTO 
-    .flex-container-contacto {
-        display:flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-items: center;
     }
