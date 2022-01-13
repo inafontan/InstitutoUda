@@ -325,6 +325,14 @@
         border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
+    // PAGINA CONTACTO 
+    .flex-container-contacto {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
     // FOOTER 
     .flex-container-footer{
         bottom: 0;
