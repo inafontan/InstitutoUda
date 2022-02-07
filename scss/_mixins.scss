@@ -8,15 +8,14 @@
 
 @mixin plan {
     display: block;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-top: 20px; 
     font-family: Arial, Helvetica, sans-serif;
-    background: rgba( 179, 173, 173, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 5px 12px 0 rgba(140, 145, 223, 0.37);
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 

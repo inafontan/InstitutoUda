@@ -1,6 +1,13 @@
-.flex-container-inicio {
+ .bienvenida {
+     @extend .autoridades;
+     @include plan;
+     text-align: center;
+     font-size: 18px;
+ }
+ 
+ .flex-container-inicio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -8,10 +15,9 @@
 }
 
 .inscripcion {
-    width: 25rem;
-    height: 25rem;
-    margin-top: 0.3125rem;  
-    margin-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px; 
     border-radius: 0.3125rem;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37);
@@ -36,10 +42,10 @@
     @extend .inscripcion; 
 }
 
-.btnbiblioteca {
-    @include unipe;
+// .btnbiblioteca {
+//     @include unipe;
     
-&:hover{
-    transform: scale(1.1);
-}
-}
+// &:hover{
+//     transform: scale(1.1);
+// }
+// }
