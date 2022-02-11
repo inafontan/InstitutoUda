@@ -1,3 +1,11 @@
+.submenu {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    background-color: rgb(69, 147, 224);
+    box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801);
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

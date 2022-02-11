@@ -1,9 +1,17 @@
  .bienvenida {
-     @extend .autoridades;
-     @include plan;
+     margin-right: 130px;
+     margin-left: 130px;   
+     margin-top: 20px;    
+     box-shadow: 0 5px 12px 0 rgba(140, 145, 223, 0.37);
+     backdrop-filter: blur( 20px );
+     -webkit-backdrop-filter: blur( 20px );
+     border-radius: 5px;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
      text-align: center;
      font-size: 18px;
  }
+
+  
  
  .flex-container-inicio {
     display: flex;
@@ -15,12 +23,10 @@
 }
 
 .inscripcion {
-    margin-right: 50px;
-    margin-left: 50px;
+     
     margin-top: 20px; 
-    border-radius: 0.3125rem;
     background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-    box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801);
     
     & ul{
         margin: 0.6250rem;

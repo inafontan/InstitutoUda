@@ -11,9 +11,8 @@ h1 {
   font-size: 25px;
   text-decoration: underline;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: rgba(119, 178, 250, 0.644);
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 0px; }
 
 .logo {
@@ -48,14 +47,14 @@ h5 {
   box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
   text-decoration: underline;
   margin-top: 12px;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px; }
 
 .bienvenida {
-  display: block;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 130px;
+  margin-left: 130px;
   margin-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 5px 12px 0 rgba(140, 145, 223, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -63,6 +62,12 @@ h5 {
   border: 1px solid rgba(255, 255, 255, 0.18);
   text-align: center;
   font-size: 18px; }
+
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto; }
 
 .flex-container-inicio {
   display: flex;
@@ -76,9 +81,8 @@ h5 {
   margin-right: 50px;
   margin-left: 50px;
   margin-top: 20px;
-  border-radius: 0.3125rem;
   background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  box-shadow: 0 0.125rem 0.3125rem 0 rgba(31, 38, 135, 0.37); }
+  box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801); }
   .inscripcion ul, .importante ul {
     margin: 0.6250rem;
     padding: 0.6250rem;
@@ -89,7 +93,7 @@ h5 {
   .inscripcion:hover, .importante:hover {
     background: cadetblue; }
 
-.autoridades, .bienvenida {
+.autoridades {
   margin-right: 100px;
   margin-left: 100px;
   margin-top: 20px; }
@@ -118,6 +122,13 @@ h5 {
 
 .ir-arriba :hover {
   transform: scale(1.2); }
+
+.submenu {
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+  background-color: #4593e0;
+  box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801); }
 
 .container {
   display: grid;
