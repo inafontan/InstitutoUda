@@ -7,27 +7,33 @@ a:link, :visited, :active  {
     color: black;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+     
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(10, 10, 10);
-    font-size: 25px;
-    text-decoration: underline;
+    font-size: 30px;
+    //text-decoration: underline;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;    
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;    
     margin-bottom: 0px;
 }
 
 
-.logo {
-    position: relative;
-    z-index: 100;
-    justify-content: center;
+.navbar-brand { //inicio
+    font-size: 16px;
 }
 
 nav  {
-    margin-top: 0%;
-    height: 50px;
+    height: 40px;
+    font-size: 16px;
     box-shadow: 0 0.125rem 0.3125rem 0 rgba(2, 0, 0, 0.678);
 }
 
@@ -35,11 +41,12 @@ nav .navbar-nav li a{
     color: black !important;
 }
 
+
+
 h2{
     color: black;
     font-size: 1.2500rem;
     text-decoration: underline;
-    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
 }
 
 h3,
@@ -52,11 +59,35 @@ h5 {
     text-align: left;
     color: rgb(19, 18, 18);
     font-size: 18px;
-    background: rgb(108, 165, 231);
+    //background: rgb(108, 165, 231);
     box-shadow: 0 2px 5px 0 rgba(31, 38, 135, 0.37);
     text-decoration: underline;
     margin-top: 12px;
     margin-bottom: 18px;
     padding-top: 3px;
     padding-bottom: 3px;
+    background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
 }
+
+.flex-container-fin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 10px;
+}
+
+.lic{
+    font-weight: bold; 
+}
+
+.ir-arriba :hover{
+    transform: scale(1.2);
+}
+

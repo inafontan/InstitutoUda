@@ -1,162 +1,70 @@
 .submenu {
-    text-align: center;
-    color: white;
-    margin-top: 5px;
-    background-color: rgb(69, 147, 224);
-    box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801);
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+  background-color: rgb(69, 147, 224);
+  box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801);
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0fr 1fr 0fr 1fr;
-    gap: 1.2500rem 0.3125rem;
-    grid-template-areas:
-        "one one one one one"
-        "two three four five six"
-        "seven seven seven seven seven"
-        "eight nine ten eleven twelve";
-    padding-bottom: 0.6250rem;
-    margin-bottom: 4.5rem;
-
-    .one{
-        margin-top: 0.9375rem;
-        animation-name: animate__tada;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        font-size: 1rem;
-        font-weight: bold;
-        background: rgba(119, 178, 250, 0.644);
-        border-radius: 0.3125rem;
-        justify-self: center;
-        align-self: center;
-        grid-area: one;
-    }
-    
-    @keyframes animate__tada{
-        0%{
-            transform: scale (1);
-        }
-    
-        25%{
-            transform: scale(1.2);
-        }
-    
-        50%{
-            transform: scale(1);
-        }
-    
-        75%{
-            transform: scale(1.2npm init);
-        }
-    
-        100%{
-            transform: scale(1);
-        }
-    }
-    
-    .two{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        align-content: space-between;
-        grid-area: two;
-    }
-    
-    .three{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: three;
-    }
-    
-    .four{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: four;
-    }
-    
-    .five{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: five;
-    }
-    
-    .six{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: six;
-    }
-    
-    .seven{
-        animation-name: animate__tada;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        font-size: 1rem;
-        font-weight: bold;
-        background: rgba(119, 178, 250, 0.644);
-        border-radius: 0.3125rem;
-        justify-self: center;
-        align-self: center;
-        grid-area: seven;
-    }
-    
-    .eight{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: eight;
-    }
-    
-    .nine{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: nine;
-    }
-    
-    .ten{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: ten;
-    }
-    
-    .eleven{
-        background: rgba(226, 226, 226, 0.555);
-        border-radius: 0.3125rem;
-        text-align: center;
-        justify-items: stretch;
-        align-items: stretch;
-        margin-left: 5px;
-        grid-area: eleven;
-    }
+.fondotitulo {
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
 }
+
+.postitulos {
+  @extend .historia;
+}
+
+
+
+.container {
+  display: flex;
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 1100px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  color: white;
+  background-color: rgb(69, 147, 224);
+  box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801);
+  animation-name: animate__tada;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+
+  @keyframes animate__tada {
+    0% {
+      transform: scale (1);
+    }
+
+    25% {
+      transform: scale(1.1);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+
+    75% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.flex-container-finb {
+  margin-left: 1250px;
+  overflow: auto;
+  z-index: 100;
+}
+

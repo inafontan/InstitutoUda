@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="uda, unión, docentes, argentinos, instituto, postitulos, distancia, puntaje"
+      content="uda, planes de estudio, carreras, distancia, profesorado"
     />
-    <meta
-      name="description"
-      content="Instituto Privado de la Unión Docentes Argentinos (A-1192) dicta postitulos, profesorados y ciclo de formación profesional."
-    />
-    <link rel="shortcut icon" href="./images/logoudafooter (2).png" />
+    <meta name="description" content="Conocé toda nuestra oferta educativa" />
+    <link rel="shortcut icon" href="../images/logoudafooter (2).png" />
 
     <!-- BOOTSTRAP -->
     <link
@@ -22,20 +19,13 @@
       crossorigin="anonymous"
     />
 
-    <!-- LIBRERIA ANIMACIÓN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- ANIMACIÓN-->
-
-    <!-- MI CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- aquí todos los estilos -->
-    <title>Instituto UDA | Inicio</title>
+    <title>Instituto UDA | Oferta Educativa</title>
   </head>
 
   <body>
+    <div id="inicio"></div>
     <header>
       <div class="nombreinstituto">
         <h1>INSTITUTO PRIVADO DE LA UNIÓN DOCENTES ARGENTINOS (A-1192)</h1>
@@ -43,10 +33,10 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="../index.html">
             <img
               class="logo"
-              src="./images/logoudabig.png"
+              src="../images/logoudabig.png"
               width="50"
               alt="Logo UDA"
               class="d-inline-block align-text-top"
@@ -66,17 +56,17 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-0 mb-lg-1">
               <li class="nav-item">
-                <a class="nav-link" href="./pages/nuestrahistoria.html">
+                <a class="nav-link" href="./nuestrahistoria.html">
                   Nuestra Historia
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/ofertaeducativa.html">
+                <a class="nav-link" href="./ofertaeducativa.html">
                   Oferta Educativa
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html"> Contacto </a>
+                <a class="nav-link" href="./contacto.html"> Contacto </a>
               </li>
               <li class="nav-item">
                 <a
@@ -84,7 +74,7 @@
                   href="http:institutouda.com.ar/campus/login/index.php"
                   target="_blank"
                 >
-                  Campus Virtual
+                  Campus virtual
                 </a>
               </li>
             </ul>
@@ -93,62 +83,28 @@
       </nav>
     </header>
 
-    <!--  <section class="bienvenida"> Bienvenidos al Instituto Privado de la Unión Docentes Argentinos (A-1192) </section> -->
+    <form action=" " method="post">
+      <ul>
+        <label for="name">Apellido:</label>
+        <input type="text" id="apellido" name="user_apellido" required />
+        <label for="name">Nombre:</label>
+        <input type="text" id="nombre" name="user_nombre" required />
+        <label for="dni">Ingresá tu DNI:</label>
+        <input type="dni" name="user_dni" required />
+        <label for="telefono">Teléfono de Contacto:</label>
+        <input type="telefono" id="telefono" name="user_telefono" required />
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="user_mail" required />
 
-    <div class="flex-container-inicio">
-      <!-- contenedor -->
-      <div class="inscripcion">
-        <h5>INSCRIPCIÓN 2022! Del 07/02/2022 al 11/03/2022</h5>
-        <!-- cada uno de los ítems -->
-        <ul>
-          <li>
-            <a href="./pages/ciclofp.html" target="_blank">
-              Ciclo de formación pedagógica para profesionales y técnicos
-              superiores, para los niveles medio y superior no universitario.
-              Resol-2014-378-SSGECP.
-            </a>
-            (<a
-              href="../archivos/Valoración de la junta Ciclo de Formacion Pedagogica para  Profesionales y Tecnicos Superiores para los Niveles Medio y Superior No  Universitario (1).pdf"
-              target="_blank"
-            >
-              <font size="2"> Ver competencias del egresado </font> </a
-            >)
-          </li>
-          <a href="HTTPS://FORM.JOTFORM.COM/220334083000638" target="_blank">
-            <h4>INSCRIBITE!</h4></a
-          >
-          <br />
-          <li>
-            <a href="./pages/proftecnico.html" target="_blank">
-              Profesorado de educación secundaria de la modalidad técnico
-              profesional en concurrencia con título de base. Resol. 1416/2020.
-            </a>
-          </li>
-          (<a
-            href="../archivos/Profesor de Educacion Secundaria en la modalidad Tecnico Profesional en concurrencia con Titulo de Base.pdf"
-            target="_blank"
-          >
-            <font size="2"> Ver competencias del egresado </font> </a
-          >)
-          <a href="HTTPS://FORM.JOTFORM.COM/220333460554650" target="_blank">
-            <h4>INSCRIBITE!</h4></a
-          >
-        </ul>
-      </div>
+        <label for="carrera">Plan de Estudios:</label>
+        <input type="carrera" id="carrera" name="user_carrera" required />
 
-      <div class="importante">
-        <h5>NOVEDADES</h5>
-        <ul>
-          <li>
-            Atención telefónica de Lunes a viernes de 14 a 18 hs. Teléfonos
-            4905-5761 / 62
-          </li>
-          <br />
-          <li>Continuamos también en info@institutouda.com.ar</li>
-          <br />
-        </ul>
-      </div>
-    </div>
+        <label for="msg">Mensaje:</label>
+        <textarea id="msg" name="user_message"></textarea>
+
+        <input id="submit" name="submit" type="submit" value="Enviar" />
+      </ul>
+    </form>
 
     <footer class="footer">
       <div class="flex-container-footer">
@@ -166,7 +122,7 @@
               target="_blank"
             >
               <img
-                src="./images/whatsappnegro.png"
+                src="../images/whatsappnegro.png"
                 width="40"
                 height="40"
                 alt="11-2401-2640 (sólo mensajes)"
@@ -175,12 +131,9 @@
           </div>
 
           <div class="instagram">
-            <a
-              href="https://www.instagram.com/institutouda/?hl=es"
-              target="_blank"
-            >
+            <a href="https://www.instagram.com/institutouda/" target="_blank">
               <img
-                src="./images/instagramnegro.png"
+                src="../images/instagramnegro.png"
                 width="40"
                 height="40"
                 alt="Seguinos en Instagram"
@@ -191,7 +144,7 @@
           <div class="facebook">
             <a href="https://www.facebook.com/institutouda" target="_blank">
               <img
-                src="./images/facebooknegro.png"
+                src="../images/facebooknegro.png"
                 width="40"
                 height="40"
                 alt="Visita nuestra página de Facebook"

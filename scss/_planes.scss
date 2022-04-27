@@ -1,5 +1,5 @@
 .container-plan {
-    @include plan;
+    @extend .historia;
 }
 
 .tituloparrafo {
