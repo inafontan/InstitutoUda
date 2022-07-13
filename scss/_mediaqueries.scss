@@ -1,210 +1,206 @@
-// MEDIAQUERIES 
+// MEDIAQUERIES
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
+  // GENERAL A TODAS LAS PAGS
+  header nav ul li {
+    box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(69, 110, 245, 0.781);
+    background-size: contain;
+  }
 
-    // GENERAL A TODAS LAS PAGS 
-    header nav ul li{
-        box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        background: rgba(69, 110, 245, 0.781);
-        background-size: contain;
-    }
+  // INDEX
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    // INDEX 
-    .flex-container-inicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .inscripcion {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
 
-    .inscripcion {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 5px;
-        font-size: 1rem;
-    }
+  // NUESTRA HISTORIA
+  .fotofrente {
+    display: none;
+  }
 
-    // NUESTRA HISTORIA 
-    .fotofrente{
-        display: none;
-    }
+  // OFERTA EDUCATIVA
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    grid-template: subgrid;
+    text-decoration: cornsilk;
+  }
 
-    // OFERTA EDUCATIVA 
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        grid-template: subgrid;
-        text-decoration: cornsilk; 
-    }
+  // PAGINA CONTACTO
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    // PAGINA CONTACTO 
-    .flex-container-contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    // FOOTER 
-    .flex-container-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+  // FOOTER
+  .flex-container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 480px){
-    // GENERAL A TODAS LAS PAGS 
-    header nav ul li{
-        width: auto;
-        box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        background: rgba(130, 194, 231, 0.781);
-        background-size: contain;
-    }
+@media screen and (max-width: 480px) {
+  // GENERAL A TODAS LAS PAGS
+  header nav ul li {
+    width: auto;
+    box-shadow: 0 2px 5px 0 rgba(212, 212, 212, 0.918);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(130, 194, 231, 0.781);
+    background-size: contain;
+  }
 
-    // INDEX 
-    .flex-container-inicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  // INDEX
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .inscripcion {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 5px;
-    }
+  .inscripcion {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
 
-    // NUESTRA HISTORIA 
-    .fotofrente{
-        display: none;
-    }
+  // NUESTRA HISTORIA
+  .fotofrente {
+    display: none;
+  }
 
-    // OFERTA EDUCATIVA 
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        grid-template: subgrid;
-        text-decoration: cornsilk; 
-    }
+  // OFERTA EDUCATIVA
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    grid-template: subgrid;
+    text-decoration: cornsilk;
+  }
 
-    // PAGINA CONTACTO 
-    .flex-container-contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  // PAGINA CONTACTO
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    // FOOTER 
-    .flex-container-footer {
-        flex-direction: column;
-        align-items: center;
-    }
+  // FOOTER
+  .flex-container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  // GENERAL A TODAS LAS PAGS
+  header nav ul li {
+    //backdrop-filter: blur(20px);
+    //-webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+  }
 
-    // GENERAL A TODAS LAS PAGS
-    header nav ul li{
-        //backdrop-filter: blur(20px);
-        //-webkit-backdrop-filter: blur(20px);
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        border-radius: 20px;
-    }
+  // INDEX
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    // INDEX 
-    .flex-container-inicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .inscripcion,
+  .btnbiblioteca {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
 
-    .inscripcion,
-    .btnbiblioteca{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 5px;
-    }
+  // NUESTRA HISTORIA
+  .fotofrente {
+    display: none;
+  }
 
-    // NUESTRA HISTORIA
-    .fotofrente{
-        display: none;
-    }
+  .lic1,
+  .lic,
+  h2,
+  ul li {
+    font-family: sans-serif;
+  }
 
-    .lic1,
-    .lic,
-    h2,
-    ul li{
-        font-family: sans-serif;
-    }
+  // PAGINA CONTACTO
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
 
-    // PAGINA CONTACTO 
-    .flex-container-contacto {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-
-    // FOOTER 
-    .flex-container-footer{
-        flex-direction: row;
-        align-items: center;
-    }
+  // FOOTER
+  .flex-container-footer {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+  // INDEX
+  .flex-container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    // INDEX 
-    .flex-container-inicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .inscripcion {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    .inscripcion {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+  // NUESTRA HISTORIA
+  .fotofrente {
+    border: 0.1875rem solid rgb(0, 11, 112);
+    display: flex;
+    float: right;
+    margin-top: -20rem;
+  }
 
-    // NUESTRA HISTORIA
-    .fotofrente{
-        border: 0.1875rem solid rgb(0, 11, 112);
-        display: flex;
-        float: right;
-        margin-top: -20rem;
-    }
+  .lic1,
+  .lic,
+  h2,
+  ul li {
+    font-family: sans-serif;
+  }
 
-    .lic1,
-    .lic,
-    h2,
-    ul li{
-        font-family: sans-serif;
-    }
+  // PAGINA CONTACTO
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+  }
 
-    // PAGINA CONTACTO 
-    .flex-container-contacto {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-items: center;
-    }
-
-    // FOOTER 
-    .flex-container-footer{
-        bottom: 0;
-    }
+  // FOOTER
+  .flex-container-footer {
+    bottom: 0;
+  }
 }
