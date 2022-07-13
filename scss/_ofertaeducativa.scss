@@ -1,6 +1,8 @@
 .submenu {
   text-align: center;
-  color: white;
+  color: rgb(10, 10, 10);
+  font-size: 16px;
+  font-weight: bold;
   margin-top: 5px;
   background-color: rgb(69, 147, 224);
   box-shadow: 0.1rem 0.125rem 0.3125rem 0 rgba(1, 1, 3, 0.801);
@@ -17,17 +19,15 @@
 
 .postitulos {
   @extend .historia;
+  
 }
-
-
 
 .container {
   display: flex;
   width: 250px;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-right: 1100px;
-  margin-bottom: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   justify-content: center;
@@ -60,6 +60,10 @@
       transform: scale(1);
     }
   }
+}
+
+.requisitos {
+  margin-top: 20px;
 }
 
 .flex-container-finb {
