@@ -74,7 +74,7 @@
   }
 
   .inscripcion {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     height: auto;
@@ -128,7 +128,7 @@
 
   .inscripcion,
   .btnbiblioteca {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     height: auto;
