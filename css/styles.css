@@ -326,7 +326,6 @@ textarea {
     margin-bottom: 5px;
     font-size: 1rem; }
   .inscripciones-vigentes {
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; }
@@ -368,7 +367,6 @@ textarea {
     height: auto;
     margin-bottom: 5px; }
   .inscripciones-vigentes {
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; }
