@@ -24,6 +24,12 @@
     font-size: 1rem;
   }
 
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   // NUESTRA HISTORIA
   .fotofrente {
     display: none;
@@ -74,11 +80,17 @@
   }
 
   .inscripcion {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+  }
+
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   // NUESTRA HISTORIA
@@ -128,11 +140,18 @@
 
   .inscripcion,
   .btnbiblioteca {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+  }
+
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   // NUESTRA HISTORIA
@@ -157,7 +176,7 @@
 
   // FOOTER
   .flex-container-footer {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -174,6 +193,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   // NUESTRA HISTORIA
@@ -202,5 +227,7 @@
   // FOOTER
   .flex-container-footer {
     bottom: 0;
+    flex-direction: row;
+    align-items: center;
   }
 }

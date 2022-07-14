@@ -71,6 +71,7 @@ h5 {
 
 .flex-container-inicio {
   display: flex;
+  flex-direction: column;
   margin-top: 25px;
   text-align: center;
   justify-content: center; }
@@ -102,6 +103,8 @@ h5 {
   font-weight: bold; }
 
 .contenido {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   margin-top: 30px;
   margin-left: 20px;
@@ -114,6 +117,7 @@ h5 {
 
 .boton-inscripcion {
   display: flex;
+  flex-direction: row;
   justify-content: right;
   align-items: center;
   padding-top: 20px; }
@@ -133,7 +137,7 @@ h5 {
 
 .inscripciones-vigentes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   margin-top: 20px; }
@@ -315,13 +319,16 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .inscripcion,
-  .importante {
+  .inscripcion {
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-bottom: 5px;
     font-size: 1rem; }
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .fotofrente {
     display: none; }
   .container {
@@ -359,6 +366,10 @@ textarea {
     width: 100%;
     height: auto;
     margin-bottom: 5px; }
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .fotofrente {
     display: none; }
   .container {
@@ -386,11 +397,16 @@ textarea {
     align-items: center; }
   .inscripcion,
   .btnbiblioteca {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: auto;
     margin-bottom: 5px; }
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .fotofrente {
     display: none; }
   .lic1,
@@ -404,7 +420,7 @@ textarea {
     align-items: center;
     justify-items: center; }
   .flex-container-footer {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; } }
 
 @media screen and (min-width: 1024px) {
@@ -416,6 +432,10 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 100%; }
+  .inscripciones-vigentes {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
   .fotofrente {
     border: 0.1875rem solid #000b70;
     display: flex;
@@ -432,4 +452,6 @@ textarea {
     align-items: center;
     justify-items: center; }
   .flex-container-footer {
-    bottom: 0; } }
+    bottom: 0;
+    flex-direction: row;
+    align-items: center; } }

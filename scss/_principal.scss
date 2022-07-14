@@ -1,19 +1,20 @@
 .flex-container-inicio {
   display: flex;
+  flex-direction: column;
   margin-top: 25px;
   text-align: center;
   justify-content: center;
- }
+}
 
 .inscripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    padding-top: 5px;
-    background-image: linear-gradient(
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-top: 5px;
+  background-image: linear-gradient(
     -225deg,
     #69eacb 0%,
     #eaccf8 48%,
@@ -24,6 +25,7 @@
 
 .contenedor-plan-inscrip {
   display: flex;
+  flex-direction: row;
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.3125rem 0 rgba(2, 0, 0, 0.678);
   background-color: #79ade0;
@@ -38,6 +40,8 @@
 }
 
 .contenido {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   margin-top: 30px;
   margin-left: 20px;
@@ -52,6 +56,7 @@
 
 .boton-inscripcion {
   display: flex;
+  flex-direction: row;
   justify-content: right;
   align-items: center;
   padding-top: 20px;
@@ -74,7 +79,7 @@
 
 .inscripciones-vigentes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   margin-top: 20px;
