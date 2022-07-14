@@ -329,6 +329,10 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 100%; }
+  .contenedor-plan-inscrip {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
   .fotofrente {
     display: none; }
   .container {
@@ -370,6 +374,10 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 100%; }
+  .contenedor-plan-inscrip {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
   .fotofrente {
     display: none; }
   .container {
@@ -408,6 +416,10 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 100%; }
+  .contenedor-plan-inscrip {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
   .fotofrente {
     display: none; }
   .lic1,
@@ -436,6 +448,10 @@ textarea {
   .inscripciones-vigentes {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100%; }
+  .contenedor-plan-inscrip {
+    flex-direction: column;
     align-items: center;
     width: 100%; }
   .fotofrente {
