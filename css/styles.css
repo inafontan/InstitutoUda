@@ -142,6 +142,24 @@ h5 {
   width: 100%;
   margin-top: 20px; }
 
+.PRE {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0c0000;
+  font-size: 30px;
+  text-shadow: 0px, 0px, 100px;
+  animation: animate 2s infinite linear; }
+
+@keyframes animate {
+  0%,
+  100% {
+    color: #62aefa; }
+  25% {
+    color: #4398ec; }
+  50% {
+    color: #3a07f3; }
+  75% {
+    color: black; } }
+
 .historia, .postitulos, .container-plan {
   margin-right: 80px;
   margin-left: 80px;
