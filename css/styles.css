@@ -90,23 +90,23 @@ h5 {
 .contenedor-plan-inscrip {
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0.125rem 0.3125rem 0 rgba(2, 0, 0, 0.678);
   background-color: #79ade0;
   align-items: center;
-  justify-content: space-between;
-  width: 500px;
-  height: 250px;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 180px;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 65px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-weight: bold; }
 
 .contenido {
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 20px;
   align-items: center;
   justify-content: center; }
@@ -120,7 +120,7 @@ h5 {
   flex-direction: row;
   justify-content: right;
   align-items: center;
-  padding-top: 20px; }
+  padding-top: 10px; }
 
 .btninscripcion {
   padding: 5px;
@@ -137,10 +137,18 @@ h5 {
 
 .inscripciones-vigentes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 20px; }
+  margin-top: 5px; }
+
+.infod {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  font-size: 25px;
+  align-self: flex-start;
+  margin-top: 35px;
+  padding-left: 10px; }
 
 .PRE {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -159,6 +167,12 @@ h5 {
     color: #3a07f3; }
   75% {
     color: black; } }
+
+.cursosinfod {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
 
 .historia, .postitulos, .container-plan {
   margin-right: 80px;
@@ -338,17 +352,17 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .inscripcion {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     margin-bottom: 5px;
     font-size: 1rem; }
   .inscripciones-vigentes {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%; }
   .contenedor-plan-inscrip {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: auto; }
   .fotofrente {
@@ -389,11 +403,11 @@ textarea {
     height: auto;
     margin-bottom: 5px; }
   .inscripciones-vigentes {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%; }
   .contenedor-plan-inscrip {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: auto; }
   .fotofrente {
@@ -431,12 +445,10 @@ textarea {
     margin-bottom: 5px; }
   .inscripciones-vigentes {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; }
+    flex-direction: row;
+    width: auto; }
   .contenedor-plan-inscrip {
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: row; }
   .fotofrente {
     display: none; }
   .lic1,
@@ -459,11 +471,11 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .inscripcion {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; }
   .inscripciones-vigentes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; }
   .contenedor-plan-inscrip {
     flex-direction: row;
