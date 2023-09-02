@@ -1,10 +1,13 @@
 {
   "name": "institutouda",
   "version": "1.0.0",
+  "homepage": "https://inafontan.github.io/InstitutoUda/",
   "description": "Web Instituto",
   "main": "index.js",
   "scripts": {
     "start": "index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
